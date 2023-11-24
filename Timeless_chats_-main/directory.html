@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image:linear-gradient(rgb(255, 255, 255),coral);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .container {
+            background-image:linear-gradient(rgb(255, 255, 255),coral);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+
+        h1 {
+            text-align: center;
+            color: #3498db;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.7rem;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        a:hover {
+            background-color: #3498db;
+            transform: scale(1.05);
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        /* Unique colors for each contact */
+        a:nth-child(1) {
+            background-color: #e74c3c;
+        }
+
+        a:nth-child(2) {
+            background-color: #3498db;
+        }
+
+        a:nth-child(3) {
+            background-color: #2ecc71;
+        }
+
+        a:nth-child(4) {
+            background-color: #e67e22;
+        }
+
+        a:nth-child(5) {
+            background-color: #9b59b6;
+        }
+
+        a:nth-child(6) {
+            background-color: #1abc9c;
+        }
+
+        a:nth-child(7) {
+            background-color: #f39c12;
+        }
+
+        a:nth-child(8) {
+            background-color: #34495e;
+        }
+
+        a:nth-child(9) {
+            background-color: #d35400;
+        }
+
+        a:nth-child(10) {
+            background-color: #27ae60;
+        }
+        .wave{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+}
+.img{
+    width: 55%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+    </style>
+</head>
+<body>
+   
+	
+		<div class="img">
+			<img src="img/bg.svg">
+		</div>
+    <div class="container">
+        <h1> Chats</h1>
+        <ul>
+            <li><a href="http://127.0.0.1:8080/"><img src="https://robohash.org/Alice?bgset=bg2" alt="Alice" class="avatar">Alice</a></li>
+            <li><a href="http://127.0.0.1:8080/"><img src="https://robohash.org/Bob?bgset=bg2" alt="Bob" class="avatar">Bob</a></li>
+            <li><a href="http://127.0.0.1:8080/"><img src="https://robohash.org/Charlie?bgset=bg2" alt="Charlie" class="avatar">Charlie</a></li>
+            <li><a href="http://127.0.0.1:8080/"><img src="https://robohash.org/David?bgset=bg2" alt="David" class="avatar">David</a></li>
+            <li><a href="http://127.0.0.1:8080/"><img src="https://robohash.org/Eve?bgset=bg2" alt="Eve" class="avatar">Eve</a></li>
+            <li><a href="http://127.0.0.1:8080/"><img src="https://robohash.org/Frank?bgset=bg2" alt="Frank" class="avatar">Frank</a></li>
+            <li><a href="http://127.0.0.1:8080/"><img src="https://robohash.org/Grace?bgset=bg2" alt="Grace" class="avatar">Grace</a></li>
+            <li><a href="http://127.0.0.1:8080/"><img src="https://robohash.org/Henry?bgset=bg2" alt="Henry" class="avatar">Henry</a></li>
+          
+            <!-- Add more contacts -->
+        </ul>
+    </div>
+</body>
+</html>
